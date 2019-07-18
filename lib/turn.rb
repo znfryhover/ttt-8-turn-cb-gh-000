@@ -8,6 +8,15 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+# code your #position_taken? method here!
+def position_taken?(board, index)
+  if board[index] == " " || board[index] == "" || board[index] == nil
+    return false
+  elsif board[index] == "X" || board[index] == "O"
+    return true
+  end
+end
+
 
 
 def input_to_index(input)
